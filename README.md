@@ -4,6 +4,7 @@
 
 [![Codacy][codacy_badge]][codacy]
 [![Code Coverage][coverage_badge]][codacy]
+[![Join the chat][gitter_badge]][gitter]
 
 ## Provider
 
@@ -79,6 +80,10 @@ CircleCI projects can be imported using the name, e.g.
 $ terraform import circleci_project.myproj myproj
 ```
 
+## Where to get help
+
+Join the chat on [Gitter][gitter].
+
 ## License
 
 terraform-provider-circleci is released under the [Mozilla Public License 2.0][].
@@ -91,4 +96,6 @@ terraform-provider-circleci is released under the [Mozilla Public License 2.0][]
 [codacy_badge]: https://api.codacy.com/project/badge/Grade/f6d223a6d8ad4ea6b0a65d5c5235f5fc
 [codacy]: https://www.codacy.com/app/thiagoalessio/terraform-provider-circleci
 [coverage_badge]: https://api.codacy.com/project/badge/Coverage/f6d223a6d8ad4ea6b0a65d5c5235f5fc
+[gitter_badge]: https://badges.gitter.im/thiagoalessio/terraform-provider-circleci.svg
+[gitter]: https://gitter.im/thiagoalessio/terraform-provider-circleci
 [Mozilla Public License 2.0]: https://github.com/thiagoalessio/terraform-provider-circleci/blob/master/LICENSE
