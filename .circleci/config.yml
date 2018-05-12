@@ -17,4 +17,4 @@ jobs:
           command: go test -coverprofile=coverage.out -v ./...
       - run:
           name: Submitting code coverage report
-          command: godacov -t $CODACY_TOKEN -r ./coverage.out -c $CIRCLECI_SHA1
+          command: godacov -t $CODACY_TOKEN -r ./coverage.out -c $CIRCLE_SHA1
