@@ -2,6 +2,7 @@
 
 [Terraform][] provider for [CircleCI][].
 
+[![Circle CI][circleci_badge]][circleci]
 [![Codacy][codacy_badge]][codacy]
 [![Code Coverage][coverage_badge]][codacy]
 [![Join the chat][gitter_badge]][gitter]
@@ -93,6 +94,8 @@ terraform-provider-circleci is released under the [Mozilla Public License 2.0][]
 
 [Terraform]: https://www.terraform.io
 [CircleCI]: https://circleci.com
+[circleci_badge]: https://circleci.com/gh/thiagoalessio/terraform-provider-circleci/tree/master.svg?style=shield
+[circleci]: https://circleci.com/gh/thiagoalessio/workflows/terraform-provider-circleci/tree/master
 [codacy_badge]: https://api.codacy.com/project/badge/Grade/f6d223a6d8ad4ea6b0a65d5c5235f5fc
 [codacy]: https://www.codacy.com/app/thiagoalessio/terraform-provider-circleci
 [coverage_badge]: https://api.codacy.com/project/badge/Coverage/f6d223a6d8ad4ea6b0a65d5c5235f5fc
