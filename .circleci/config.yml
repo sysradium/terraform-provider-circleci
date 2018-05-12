@@ -1,0 +1,20 @@
+---
+version: 2
+
+jobs:
+  build:
+    docker:
+      - image: circleci/golang:1.9
+    working_directory: /go/src/github.com/thiagoalessio/terraform-provider-circleci
+    steps:
+      - checkout
+      - run:
+          name: Getting dependencies
+          command: |
+            go get github.com/schrej/godacov && go get -v -t -d ./...
+      - run:
+          name: Running tests (with code coverage)
+          command: go test -coverprofile=coverage.out -v ./...
+      - run:
+          name: Submitting code coverage report
+          command: godacov -t $CODACY_TOKEN -r ./coverage.out -c $CIRCLECI_SHA1
