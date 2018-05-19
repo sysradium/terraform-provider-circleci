@@ -7,6 +7,15 @@ Terraform provider for CircleCI.
 [![Code Coverage][coverage_badge]][codacy]
 [![Join the chat][gitter_badge]][gitter]
 
+## Table of contents
+
+* [Provider](#provider)
+* [Data Sources](#data-sources)
+* [Resources](#resources)
+	* [circleci_project](#circleci_project)
+* [Where to get help](#where-to-get-help)
+* [License](#license)
+
 ## Provider
 
 The CircleCI provider is used to interact with CircleCI resources.
@@ -35,13 +44,9 @@ The following arguments are supported in the `provider` block:
   It must be provided, but it can also be sourced from the `CIRCLECI_ORGANIZATION`
   environment variable.
 
----
-
 ## Data Sources
 
 @TODO
-
----
 
 ## Resources
 
