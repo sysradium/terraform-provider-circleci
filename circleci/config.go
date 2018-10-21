@@ -1,6 +1,8 @@
 package circleci
 
 import (
+	"net/url"
+
 	"github.com/jszwedko/go-circleci"
 )
 
@@ -18,7 +20,7 @@ func (c *Config) Client() (interface{}, error) {
 	var org Organization
 
 	org.name = c.Organization
-	org.client = &circleci.Client{Token: c.Token}
+	org.client = &circleci.Client{Token: c.Token, BaseURL: &url.URL{Host: "circleci.com", Scheme: "https", Path: "/api/v1.1/"}}
 
 	return &org, nil
 }
